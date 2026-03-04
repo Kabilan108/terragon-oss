@@ -18,6 +18,8 @@
           packages = [
             pkgs.nodejs_20
             pkgs.pnpm_10
+            pkgs.cloudflared
+            pkgs.stripe-cli
           ];
         };
       });

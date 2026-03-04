@@ -47,8 +47,8 @@ export const env = envsafe({
   }),
 
   // AI Providers
-  ANTHROPIC_API_KEY: str(),
-  OPENAI_API_KEY: str(),
+  ANTHROPIC_API_KEY: str({ allowEmpty: true, default: "" }),
+  OPENAI_API_KEY: str({ allowEmpty: true, default: "" }),
   OPENROUTER_API_KEY: str({ allowEmpty: true, default: "" }),
   GOOGLE_AI_STUDIO_API_KEY: str({ allowEmpty: true, default: "" }),
 
@@ -66,13 +66,13 @@ export const env = envsafe({
   R2_ENDPOINT: str({ allowEmpty: true, default: "" }),
 
   // Sandbox providers
-  E2B_API_KEY: str(),
+  E2B_API_KEY: str({ allowEmpty: true, default: "" }),
   DAYTONA_API_KEY: str({ default: "", allowEmpty: true }),
 
   // GitHub App
   GITHUB_CLIENT_ID: str(),
   GITHUB_CLIENT_SECRET: str(),
-  NEXT_PUBLIC_GITHUB_APP_NAME: str({ devDefault: "" }),
+  NEXT_PUBLIC_GITHUB_APP_NAME: str({ allowEmpty: true, default: "" }),
   GITHUB_WEBHOOK_SECRET: str(),
   GITHUB_APP_ID: str(),
   GITHUB_APP_PRIVATE_KEY: str(),

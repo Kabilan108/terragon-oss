@@ -27,6 +27,7 @@ export function SandboxProviderSelector() {
       <SelectContent align="end">
         <SelectItem value="default">Default</SelectItem>
         <SelectItem value="e2b">E2B</SelectItem>
+        <SelectItem value="docker">Docker</SelectItem>
         <SelectItem value="daytona">Daytona</SelectItem>
       </SelectContent>
     </Select>
